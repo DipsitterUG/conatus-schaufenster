@@ -1,0 +1,230 @@
+[
+  {
+    "art": "fluss",
+    "band": [
+      -20.0,
+      180.0
+    ],
+    "becken": {
+      "gebaut": false,
+      "grund": "Wasserart fluss bringt keine eigene Flaeche mit (beim Fluss kommt das Bett aus dem Kontinentfeld, Studio#396)",
+      "wasserart": "fluss"
+    },
+    "biome": "temperate",
+    "damage": 0.0,
+    "hoechster_punkt_elmos": 134.87,
+    "nass": 32470,
+    "nass_anteil": 0.123381,
+    "punkte": 263169,
+    "technisch_wasser": true,
+    "tiefster_punkt_elmos": -19.98
+  },
+  {
+    "art": "oase",
+    "band": [
+      -25.0,
+      140.0
+    ],
+    "becken": {
+      "anzahl": 1,
+      "art": "oase",
+      "gebaut": true,
+      "landsockel": {
+        "gehoben": true,
+        "nachher_tiefster_elmos": 3.0,
+        "reliefstauchung": 0.8304,
+        "sockel_elmos": 3.0,
+        "vorher_tiefster_elmos": -24.99
+      },
+      "mulden": [
+        {
+          "mitte": [
+            190,
+            407
+          ],
+          "radius_px": 38,
+          "rand_elmos": 23.21,
+          "veraenderte_punkte": 4575,
+          "welle_anteil": 0.22
+        }
+      ],
+      "radius_px": 38,
+      "technisch_wasser": true,
+      "verworfene_mulden": 0,
+      "wasserart": "oase",
+      "ziel_elmos": -9.0,
+      "ziel_geklemmt": false
+    },
+    "biome": "desert",
+    "damage": 0.0,
+    "hoechster_punkt_elmos": 140.0,
+    "nass": 1993,
+    "nass_anteil": 0.007573,
+    "punkte": 263169,
+    "technisch_wasser": true,
+    "tiefster_punkt_elmos": -9.0
+  },
+  {
+    "art": "sumpfwasser",
+    "band": [
+      -20.0,
+      90.0
+    ],
+    "becken": {
+      "anzahl": 4,
+      "art": "sumpfwasser",
+      "gebaut": true,
+      "landsockel": {
+        "gehoben": true,
+        "nachher_tiefster_elmos": 1.5,
+        "reliefstauchung": 0.7479,
+        "sockel_elmos": 1.5,
+        "vorher_tiefster_elmos": -19.98
+      },
+      "mulden": [
+        {
+          "mitte": [
+            149,
+            145
+          ],
+          "radius_px": 51,
+          "rand_elmos": 31.75,
+          "veraenderte_punkte": 8249,
+          "welle_anteil": 0.22
+        },
+        {
+          "mitte": [
+            424,
+            111
+          ],
+          "radius_px": 51,
+          "rand_elmos": 21.51,
+          "veraenderte_punkte": 8244,
+          "welle_anteil": 0.22
+        },
+        {
+          "mitte": [
+            345,
+            328
+          ],
+          "radius_px": 51,
+          "rand_elmos": 20.58,
+          "veraenderte_punkte": 8240,
+          "welle_anteil": 0.22
+        },
+        {
+          "mitte": [
+            97,
+            279
+          ],
+          "radius_px": 51,
+          "rand_elmos": 14.2,
+          "veraenderte_punkte": 8251,
+          "welle_anteil": 0.22
+        }
+      ],
+      "radius_px": 51,
+      "technisch_wasser": true,
+      "verworfene_mulden": 0,
+      "wasserart": "sumpfwasser",
+      "ziel_elmos": -2.5,
+      "ziel_geklemmt": false
+    },
+    "biome": "temperate",
+    "damage": 0.0,
+    "hoechster_punkt_elmos": 65.24,
+    "nass": 7687,
+    "nass_anteil": 0.029209,
+    "punkte": 263169,
+    "technisch_wasser": true,
+    "tiefster_punkt_elmos": -2.5
+  },
+  {
+    "art": "lava",
+    "band": [
+      -30.0,
+      220.0
+    ],
+    "becken": {
+      "anzahl": 1,
+      "art": "lava",
+      "gebaut": true,
+      "landsockel": {
+        "gehoben": true,
+        "nachher_tiefster_elmos": 4.0,
+        "reliefstauchung": 0.8517,
+        "sockel_elmos": 4.0,
+        "vorher_tiefster_elmos": -29.94
+      },
+      "mulden": [
+        {
+          "mitte": [
+            382,
+            437
+          ],
+          "radius_px": 46,
+          "rand_elmos": 56.89,
+          "veraenderte_punkte": 6709,
+          "welle_anteil": 0.22
+        }
+      ],
+      "radius_px": 46,
+      "technisch_wasser": true,
+      "verworfene_mulden": 0,
+      "wasserart": "lava",
+      "ziel_elmos": -24.0,
+      "ziel_geklemmt": false
+    },
+    "biome": "volcanic",
+    "damage": 120.0,
+    "hoechster_punkt_elmos": 196.68,
+    "nass": 2443,
+    "nass_anteil": 0.009283,
+    "punkte": 263169,
+    "technisch_wasser": true,
+    "tiefster_punkt_elmos": -24.0
+  },
+  {
+    "art": "eisflaeche",
+    "band": [
+      0.0,
+      200.0
+    ],
+    "becken": {
+      "anzahl": 1,
+      "art": "eisflaeche",
+      "gebaut": true,
+      "landsockel": {
+        "gehoben": false,
+        "grund": "tiefster Punkt liegt schon bei 20.02 Elmo, Sockel waere 6.00",
+        "tiefster_punkt_elmos": 20.02
+      },
+      "mulden": [
+        {
+          "mitte": [
+            389,
+            161
+          ],
+          "radius_px": 72,
+          "rand_elmos": 111.79,
+          "veraenderte_punkte": 16426,
+          "welle_anteil": 0.22
+        }
+      ],
+      "radius_px": 72,
+      "technisch_wasser": false,
+      "verworfene_mulden": 0,
+      "wasserart": "eisflaeche",
+      "ziel_elmos": 1.5,
+      "ziel_geklemmt": false
+    },
+    "biome": "ice",
+    "damage": 0.0,
+    "hoechster_punkt_elmos": 199.98,
+    "nass": 0,
+    "nass_anteil": 0.0,
+    "punkte": 263169,
+    "technisch_wasser": false,
+    "tiefster_punkt_elmos": 1.5
+  }
+]
