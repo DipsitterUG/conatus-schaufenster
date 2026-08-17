@@ -1,0 +1,78 @@
+{
+  "verfahren": "Segmentierung S>0.15, Nadel/Laub G>=R, Holz R>G",
+  "bezug": "Gesamthoehe H des Baums im Bild",
+  "kandidaten": {
+    "A": {
+      "name": "Fichte mit Etagen",
+      "datei": "nadelbaum-A-fichte-etagen.png",
+      "hoehe_px": 1167.0,
+      "breite_durch_hoehe": 0.3779,
+      "nadelbreite_durch_hoehe": 0.3779,
+      "nadelbreite_durch_nadelhoehe": 0.4846,
+      "unterste_nadelkante_anteil_H": 0.2168,
+      "nadelmasse_anteil_H": 0.7798,
+      "gruenflaeche_anteil_baum": 0.7998,
+      "holzflaeche_anteil_baum": 0.2002,
+      "gruen_median_besonnt_rgb": [
+        41,
+        100,
+        55
+      ]
+    },
+    "B": {
+      "name": "Kiefer mit Schirm",
+      "datei": "nadelbaum-B-kiefer-schirm.png",
+      "hoehe_px": 1124.0,
+      "breite_durch_hoehe": 0.629,
+      "nadelbreite_durch_hoehe": 0.629,
+      "nadelbreite_durch_nadelhoehe": 2.1168,
+      "unterste_nadelkante_anteil_H": 0.702,
+      "nadelmasse_anteil_H": 0.2972,
+      "gruenflaeche_anteil_baum": 0.6248,
+      "holzflaeche_anteil_baum": 0.3752,
+      "gruen_median_besonnt_rgb": [
+        45,
+        106,
+        72
+      ]
+    },
+    "C": {
+      "name": "Tanne als Kegel",
+      "datei": "nadelbaum-C-tanne-kegel.png",
+      "hoehe_px": 1168.0,
+      "breite_durch_hoehe": 0.3784,
+      "nadelbreite_durch_hoehe": 0.3784,
+      "nadelbreite_durch_nadelhoehe": 0.4074,
+      "unterste_nadelkante_anteil_H": 0.0642,
+      "nadelmasse_anteil_H": 0.9289,
+      "gruenflaeche_anteil_baum": 0.9674,
+      "holzflaeche_anteil_baum": 0.0326,
+      "gruen_median_besonnt_rgb": [
+        69,
+        121,
+        72
+      ]
+    }
+  },
+  "leitbaum_zielbild": {
+    "hoehe_px": 1114.0,
+    "breite_durch_hoehe": 0.9255,
+    "nadelbreite_durch_hoehe": 0.9255,
+    "nadelbreite_durch_nadelhoehe": 1.2144,
+    "unterste_nadelkante_anteil_H": 0.237,
+    "nadelmasse_anteil_H": 0.7621,
+    "gruenflaeche_anteil_baum": 0.8583,
+    "holzflaeche_anteil_baum": 0.1417,
+    "gruen_median_besonnt_rgb": [
+      195,
+      221,
+      23
+    ]
+  },
+  "silhouetten_deckung_56px": {
+    "A": 0.17,
+    "B": 0.1789,
+    "C": 0.2363,
+    "Leitbaum": 0.5258
+  }
+}
