@@ -1,0 +1,173 @@
+{
+  "A": {
+    "name": "Arbeiter-Chassis",
+    "datei": "android-A-arbeiter-chassis.png",
+    "ansichten_gefunden": 3,
+    "hoehenstreuung": 0.026,
+    "objektpixel_gesamt": 380902,
+    "ansichten": [
+      {
+        "x": [
+          112,
+          416
+        ],
+        "breite": 304,
+        "hoehe": 898,
+        "b_zu_h": 0.339,
+        "fuellgrad": 0.497,
+        "objektpixel": 135544,
+        "median_helligkeit": 57,
+        "anteil_hell": 0.174,
+        "anteil_dunkel": 0.698
+      },
+      {
+        "x": [
+          614,
+          918
+        ],
+        "breite": 304,
+        "hoehe": 912,
+        "b_zu_h": 0.333,
+        "fuellgrad": 0.516,
+        "objektpixel": 143163,
+        "median_helligkeit": 52,
+        "anteil_hell": 0.144,
+        "anteil_dunkel": 0.737
+      },
+      {
+        "x": [
+          1081,
+          1353
+        ],
+        "breite": 272,
+        "hoehe": 922,
+        "b_zu_h": 0.295,
+        "fuellgrad": 0.408,
+        "objektpixel": 102195,
+        "median_helligkeit": 52,
+        "anteil_hell": 0.079,
+        "anteil_dunkel": 0.823
+      }
+    ],
+    "silhouette_klein": {
+      "hoehe_px": 27,
+      "breite_px": 9,
+      "b_zu_h": 0.333,
+      "deckung": 0.675
+    }
+  },
+  "B": {
+    "name": "Sicherungs-Chassis",
+    "datei": "android-B-sicherungs-chassis.png",
+    "ansichten_gefunden": 3,
+    "hoehenstreuung": 0.0091,
+    "objektpixel_gesamt": 448235,
+    "ansichten": [
+      {
+        "x": [
+          128,
+          491
+        ],
+        "breite": 363,
+        "hoehe": 871,
+        "b_zu_h": 0.417,
+        "fuellgrad": 0.52,
+        "objektpixel": 164383,
+        "median_helligkeit": 77,
+        "anteil_hell": 0.162,
+        "anteil_dunkel": 0.586
+      },
+      {
+        "x": [
+          666,
+          982
+        ],
+        "breite": 316,
+        "hoehe": 879,
+        "b_zu_h": 0.359,
+        "fuellgrad": 0.596,
+        "objektpixel": 165522,
+        "median_helligkeit": 74,
+        "anteil_hell": 0.13,
+        "anteil_dunkel": 0.613
+      },
+      {
+        "x": [
+          1074,
+          1371
+        ],
+        "breite": 297,
+        "hoehe": 874,
+        "b_zu_h": 0.34,
+        "fuellgrad": 0.456,
+        "objektpixel": 118330,
+        "median_helligkeit": 87,
+        "anteil_hell": 0.131,
+        "anteil_dunkel": 0.52
+      }
+    ],
+    "silhouette_klein": {
+      "hoehe_px": 27,
+      "breite_px": 11,
+      "b_zu_h": 0.407,
+      "deckung": 0.646
+    }
+  },
+  "C": {
+    "name": "Rahmenlaeufer",
+    "datei": "android-C-rahmenlaeufer.png",
+    "ansichten_gefunden": 3,
+    "hoehenstreuung": 0.0079,
+    "objektpixel_gesamt": 309797,
+    "ansichten": [
+      {
+        "x": [
+          138,
+          431
+        ],
+        "breite": 293,
+        "hoehe": 882,
+        "b_zu_h": 0.332,
+        "fuellgrad": 0.407,
+        "objektpixel": 105142,
+        "median_helligkeit": 67,
+        "anteil_hell": 0.134,
+        "anteil_dunkel": 0.712
+      },
+      {
+        "x": [
+          614,
+          914
+        ],
+        "breite": 300,
+        "hoehe": 889,
+        "b_zu_h": 0.337,
+        "fuellgrad": 0.449,
+        "objektpixel": 119863,
+        "median_helligkeit": 69,
+        "anteil_hell": 0.12,
+        "anteil_dunkel": 0.73
+      },
+      {
+        "x": [
+          1096,
+          1379
+        ],
+        "breite": 283,
+        "hoehe": 885,
+        "b_zu_h": 0.32,
+        "fuellgrad": 0.339,
+        "objektpixel": 84792,
+        "median_helligkeit": 66,
+        "anteil_hell": 0.083,
+        "anteil_dunkel": 0.774
+      }
+    ],
+    "silhouette_klein": {
+      "hoehe_px": 27,
+      "breite_px": 9,
+      "b_zu_h": 0.333,
+      "deckung": 0.638
+    }
+  }
+}
