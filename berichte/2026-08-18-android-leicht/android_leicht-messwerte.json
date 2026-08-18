@@ -1,0 +1,503 @@
+{
+  "M10_gliedlaengen": {
+    "differenz_arm": 0.0,
+    "differenz_bein": 0.0,
+    "ist": {
+      "oberarm_L": 2.2,
+      "oberarm_R": 2.2,
+      "oberschenkel_L": 3.6062,
+      "oberschenkel_R": 3.6062,
+      "unterarm_L": 2.45,
+      "unterarm_R": 2.45,
+      "unterschenkel_L": 4.9545,
+      "unterschenkel_R": 4.9545
+    }
+  },
+  "M1_hoehe": {
+    "gehalten": true,
+    "ist": 20.0,
+    "soll": 20.0,
+    "toleranz": 0.3
+  },
+  "M2_ausdehnung": {
+    "ist_breite": 5.9141,
+    "ist_tiefe": 6.0493,
+    "soll_breite": 6.1,
+    "soll_tiefe": 5.1
+  },
+  "M3_boden": {
+    "beruehrt_boden": [
+      "Foot_L",
+      "Foot_R"
+    ],
+    "gehalten": true,
+    "je_piece": {
+      "Arm_L_Lower": 12.5984,
+      "Arm_L_Upper": 14.0807,
+      "Arm_R_Lower": 12.3091,
+      "Arm_R_Upper": 14.0555,
+      "Foot_L": 0.0,
+      "Foot_R": 0.0,
+      "Hand_L": 12.2002,
+      "Hand_R": 11.43,
+      "Head": 17.6,
+      "Leg_L_Lower": 1.4349,
+      "Leg_L_Upper": 6.3734,
+      "Leg_R_Lower": 1.4349,
+      "Leg_R_Upper": 6.3734,
+      "Machine_Gun": 11.6361,
+      "Pelvis": 9.6,
+      "Torso": 11.4
+    },
+    "min_z_gesamt": 0.0
+  },
+  "M4_dreiecke": {
+    "gehalten": true,
+    "ist": 4004,
+    "je_piece": {
+      "Arm_L_Lower": 184,
+      "Arm_L_Upper": 184,
+      "Arm_R_Lower": 184,
+      "Arm_R_Upper": 184,
+      "Foot_L": 204,
+      "Foot_R": 204,
+      "Gun_Muzzle": 0,
+      "Hand_L": 220,
+      "Hand_R": 220,
+      "Head": 256,
+      "Leg_L_Lower": 248,
+      "Leg_L_Upper": 204,
+      "Leg_R_Lower": 248,
+      "Leg_R_Upper": 204,
+      "Machine_Gun": 336,
+      "Pelvis": 396,
+      "Torso": 528
+    },
+    "korridor": [
+      4000,
+      5500
+    ],
+    "obergrenze": 6000,
+    "soll": 5000,
+    "soll_je_piece": {
+      "Arm_L_Lower": 180,
+      "Arm_L_Upper": 180,
+      "Arm_R_Lower": 180,
+      "Arm_R_Upper": 180,
+      "Foot_L": 200,
+      "Foot_R": 200,
+      "Gun_Muzzle": 0,
+      "Hand_L": 210,
+      "Hand_R": 210,
+      "Head": 440,
+      "Leg_L_Lower": 260,
+      "Leg_L_Upper": 200,
+      "Leg_R_Lower": 260,
+      "Leg_R_Upper": 200,
+      "Machine_Gun": 460,
+      "Pelvis": 520,
+      "Torso": 1080
+    }
+  },
+  "M5_register": {
+    "ist_atlas": {
+      "belegte_texel_prozent": 66.75,
+      "dunkel": 56.89,
+      "hell": 13.07,
+      "leucht": 0.59,
+      "mittel": 29.45,
+      "pixel": 699878
+    },
+    "ist_render_front": {
+      "dunkel": 66.05,
+      "hell": 2.72,
+      "leucht": 0.16,
+      "mittel": 31.07,
+      "pixel": 79421
+    },
+    "soll": {
+      "dunkel": [
+        50.0,
+        78.0
+      ],
+      "hell": [
+        9.0,
+        20.0
+      ],
+      "leucht": [
+        0.2,
+        1.5
+      ],
+      "mittel": [
+        8.0,
+        30.0
+      ]
+    },
+    "soll_gilt_fuer": "ist_render_front (gleiche Groesse wie am Zielbild)"
+  },
+  "M6_textur": {
+    "ist": {
+      "leucht_anteil": 1.3,
+      "team_anteil": 2.2,
+      "tex1_alpha_ausser_team": 0.0,
+      "tex2_alpha_min": 1.0,
+      "ueberschneidung": 0.0
+    },
+    "soll_leucht": [
+      0.3,
+      3.0
+    ],
+    "soll_team": [
+      2.0,
+      12.0
+    ]
+  },
+  "M7_gelenkluecke": {
+    "Arm_L_Lower<-Arm_L_Upper": 0.04,
+    "Arm_L_Upper<-Torso": 0.1427,
+    "Arm_R_Lower<-Arm_R_Upper": 0.0357,
+    "Arm_R_Upper<-Torso": 0.2079,
+    "Foot_L<-Leg_L_Lower": 0.1055,
+    "Foot_R<-Leg_R_Lower": 0.1055,
+    "Hand_L<-Arm_L_Lower": 0.0382,
+    "Hand_R<-Arm_R_Lower": 0.0811,
+    "Head<-Torso": 0.2794,
+    "Leg_L_Lower<-Leg_L_Upper": 0.0177,
+    "Leg_L_Upper<-Pelvis": 0.1136,
+    "Leg_R_Lower<-Leg_R_Upper": 0.0177,
+    "Leg_R_Upper<-Pelvis": 0.1136,
+    "Machine_Gun<-Hand_R": 0.0287,
+    "Torso<-Pelvis": 0.2665
+  },
+  "M8_pivots": {
+    "ellbogen_ist": {
+      "L": [
+        -1.6284,
+        0.9094,
+        14.2227
+      ],
+      "R": [
+        2.7941,
+        0.0271,
+        14.1686
+      ]
+    },
+    "ellbogen_soll": {
+      "L": [
+        -1.628,
+        0.909,
+        14.223
+      ],
+      "R": [
+        2.794,
+        0.027,
+        14.169
+      ]
+    },
+    "ist": {
+      "Arm_L_Lower": [
+        -1.6284,
+        0.9094,
+        14.2227
+      ],
+      "Arm_L_Upper": [
+        -1.95,
+        0.0,
+        16.2
+      ],
+      "Arm_R_Lower": [
+        2.7941,
+        0.0271,
+        14.1686
+      ],
+      "Arm_R_Upper": [
+        1.95,
+        0.0,
+        16.2
+      ],
+      "Foot_L": [
+        -1.65,
+        0.0,
+        1.45
+      ],
+      "Foot_R": [
+        1.65,
+        0.0,
+        1.45
+      ],
+      "Gun_Muzzle": [
+        -0.19,
+        4.06,
+        12.55
+      ],
+      "Hand_L": [
+        0.05,
+        2.05,
+        12.85
+      ],
+      "Hand_R": [
+        1.2,
+        0.85,
+        12.5
+      ],
+      "Head": [
+        0.0,
+        0.0,
+        16.9
+      ],
+      "Leg_L_Lower": [
+        -1.5,
+        -0.15,
+        6.4
+      ],
+      "Leg_L_Upper": [
+        -1.35,
+        0.0,
+        10.0
+      ],
+      "Leg_R_Lower": [
+        1.5,
+        -0.15,
+        6.4
+      ],
+      "Leg_R_Upper": [
+        1.35,
+        0.0,
+        10.0
+      ],
+      "Machine_Gun": [
+        1.05,
+        1.0,
+        12.35
+      ],
+      "Pelvis": [
+        0.0,
+        0.0,
+        11.0
+      ],
+      "Torso": [
+        0.0,
+        0.0,
+        11.6
+      ]
+    },
+    "soll": {
+      "griff": [
+        1.05,
+        1.0,
+        12.35
+      ],
+      "hand_L": [
+        0.05,
+        2.05,
+        12.85
+      ],
+      "hand_R": [
+        1.2,
+        0.85,
+        12.5
+      ],
+      "head": [
+        0.0,
+        0.0,
+        16.9
+      ],
+      "hueft_L": [
+        -1.35,
+        0.0,
+        10.0
+      ],
+      "hueft_R": [
+        1.35,
+        0.0,
+        10.0
+      ],
+      "knie_L": [
+        -1.5,
+        -0.15,
+        6.4
+      ],
+      "knie_R": [
+        1.5,
+        -0.15,
+        6.4
+      ],
+      "knoechel_L": [
+        -1.65,
+        0.0,
+        1.45
+      ],
+      "knoechel_R": [
+        1.65,
+        0.0,
+        1.45
+      ],
+      "muendung": [
+        -0.19,
+        4.06,
+        12.55
+      ],
+      "pelvis": [
+        0.0,
+        0.0,
+        11.0
+      ],
+      "schulter_L": [
+        -1.95,
+        0.0,
+        16.2
+      ],
+      "schulter_R": [
+        1.95,
+        0.0,
+        16.2
+      ],
+      "torso": [
+        0.0,
+        0.0,
+        11.6
+      ]
+    }
+  },
+  "M9_dichtheit": {
+    "Arm_L_Lower": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 3,
+      "schalen_soll": 3
+    },
+    "Arm_L_Upper": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 3,
+      "schalen_soll": 3
+    },
+    "Arm_R_Lower": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 3,
+      "schalen_soll": 3
+    },
+    "Arm_R_Upper": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 3,
+      "schalen_soll": 3
+    },
+    "Foot_L": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 5,
+      "schalen_soll": 5
+    },
+    "Foot_R": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 5,
+      "schalen_soll": 5
+    },
+    "Hand_L": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 5,
+      "schalen_soll": 5
+    },
+    "Hand_R": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 5,
+      "schalen_soll": 5
+    },
+    "Head": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 8,
+      "schalen_soll": 8
+    },
+    "Leg_L_Lower": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 4,
+      "schalen_soll": 4
+    },
+    "Leg_L_Upper": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 3,
+      "schalen_soll": 3
+    },
+    "Leg_R_Lower": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 4,
+      "schalen_soll": 4
+    },
+    "Leg_R_Upper": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 3,
+      "schalen_soll": 3
+    },
+    "Machine_Gun": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 12,
+      "schalen_soll": 12
+    },
+    "Pelvis": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 13,
+      "schalen_soll": 13
+    },
+    "Torso": {
+      "dicht": true,
+      "nicht_mannigfaltig": 0,
+      "offene_raender": 0,
+      "schalen": 16,
+      "schalen_soll": 16
+    }
+  },
+  "herkunft": "eigene Fabrik (Blender + backen.py), kein Fremdmaterial",
+  "palette_gezaehmt": {
+    "dunkel": {
+      "gezaehmt": true,
+      "kantenmischer": 1,
+      "rauschknoten": 1
+    }
+  },
+  "pieces": [
+    "Arm_L_Lower",
+    "Arm_L_Upper",
+    "Arm_R_Lower",
+    "Arm_R_Upper",
+    "Foot_L",
+    "Foot_R",
+    "Gun_Muzzle",
+    "Hand_L",
+    "Hand_R",
+    "Head",
+    "Leg_L_Lower",
+    "Leg_L_Upper",
+    "Leg_R_Lower",
+    "Leg_R_Upper",
+    "Machine_Gun",
+    "Pelvis",
+    "Torso"
+  ]
+}
