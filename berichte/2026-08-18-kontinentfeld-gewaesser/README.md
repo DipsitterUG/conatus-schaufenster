@@ -99,3 +99,51 @@ Uebersicht schon. Eine Glaettung waere ein eigener Zug.
 
 Herkunft: Eigenarbeit. Kein fremdes Bildmaterial, keine fremden Daten; alle
 Bilder aus Zahlen dieses Projekts erzeugt.
+
+---
+
+## ★ NACHTRAG 2026-08-18 (Erst-Abnahme): dieselben zwei Zellen als ECHTE KARTE, unter Windows
+
+Alle Bilder oben sind Datenbilder aus dem Feld. Hier stehen zum ersten Mal die
+**gebauten Kartenpakete** in der **Spiel-Engine unter Windows**
+(Renderer Intel(R) Arc(TM) Graphics, `tools/terrain_sichttest.ps1`).
+
+Gebaut mit
+`build-cell-mapset --zellen "2,6;2,7"` aus Studio-`main` 61fa57f (Kartensatz 0.2,
+**nicht veroeffentlicht** -- die Pakete lagen nur in einem Wegwerf-Verzeichnis).
+Das ist genau das Paar, das der Builder-Bericht als Kernbild fuehrt.
+
+### Zelle 2-7 -- der Fluss laeuft von Nord nach Sued durch die ganze Karte
+
+![Zelle 2-7, Aufsicht](windows/zelle-2-7-aufsicht.png)
+![Zelle 2-7, RTS-Winkel](windows/zelle-2-7-rts.png)
+
+### Zelle 2-6 -- die Nachbarzelle: Muendung, mehr als die halbe Karte ist Wasser
+
+![Zelle 2-6, Aufsicht](windows/zelle-2-6-aufsicht.png)
+![Zelle 2-6, RTS-Winkel](windows/zelle-2-6-rts.png)
+
+### Was daran gemessen ist, nicht geraten
+
+| | Zelle 2-7 | Zelle 2-6 |
+|---|---|---|
+| nasse Punkte (von 263 169) | 60 454 = **23,0 %** | 137 091 = **52,1 %** |
+| tiefster Punkt | −7,35 Elmo | −7,36 Elmo |
+| Hoehenspanne der Karte | | **−7,4 bis 54,7 Elmo** auf 4 096 Elmo Kante |
+| Talbreite laut Rezept | 0,38 Zellen = **~1 550 Elmo** | dieselbe |
+| Gewaesserart laut Rezept | Fluss durchgehend | `meer`, Muendung von `river_5` |
+| groesster Hoehensprung zwischen zwei Stuetzstellen | | **1,4 Elmo -- ueberall gleich**, im Randsaum wie in der Kartenmitte |
+
+**Das wurmartige Hell-Dunkel-Muster im Randsaum ist KEINE Geometrie.** Am
+Hoehenfeld nachgemessen: der groesste Sprung ist im Saum exakt so gross wie in
+der Kartenmitte (1,4 Elmo). Es ist die Textur (SSMF/Splat) -- also
+Terrain-Look, **Studio#16**, nicht dieser Vorgang.
+
+### Was nur ein Mensch entscheiden kann
+
+1. Der Fluss laeuft ueber die Zellgrenze durch -- **aber er ist ~1,5 km breit
+   und steht grau.** Ist das ein Fluss oder eine Bucht?
+2. Zelle 2-6 ist zu ueber der Haelfte Wasser. Ist eine solche Zelle bespielbar,
+   oder muss die Muendungszelle anders aussehen?
+3. Beide Zellen sind sehr flach (55 Elmo Hoehenunterschied auf 4 km). Das ist
+   die Umsetzung von *"nicht so viel Hochland"* -- ist sie zu weit gegangen?

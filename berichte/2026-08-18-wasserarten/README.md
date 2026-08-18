@@ -76,3 +76,56 @@ Vollstaendig samt Muldenbericht: `messwerte.json` neben den Bildern.
   Emission. Schwimmfaehige Einheiten treiben weiter auf der Flaeche — sie
   verbrennen dabei.
 - **Kein Sichtbeweis.** Siehe oben: Datenbilder.
+
+---
+
+## ★ NACHTRAG 2026-08-18 (Erst-Abnahme): die Beispielkarten in der Engine, unter WINDOWS
+
+Alles oben sind Datenbilder aus der Hoehenkarte. Hier stehen die **gebauten
+Kartenpakete** zum ersten Mal in der **Spiel-Engine unter Windows**
+(Renderer Intel(R) Arc(TM) Graphics, `tools/terrain_sichttest.ps1`,
+Wasser-Renderer `Water = 4` aus `config/conatus_springsettings.cfg`).
+
+Gebaut mit `build-water-mapset --arten oase lava sumpfwasser eisflaeche` aus
+Studio-`main` 61fa57f. Die Messwerte stimmen **auf den Punkt** mit dem
+Builder-Bericht: Oase 1 993 nasse Punkte (0,76 %), Sumpf 7 687 (2,92 %),
+Lava 2 443 (0,93 %), Eisflaeche **0**.
+
+### Oase — funktioniert
+
+![Oase nah](windows/oase-nah.png)
+![Oase, ganze Karte](windows/oase-ganze-karte.png)
+
+Eine tuerkise Wasserstelle in einer trockenen Wueste, gewellter Umriss, Ufer
+begehbar. Genau die Ansage aus cnc#75.
+
+### Lava — die Form stimmt, die Farbe nicht
+
+![Lava nah](windows/lava-nah.png)
+![Lava, ganze Karte](windows/lava-ganze-karte.png)
+
+Der Kessel ist da (−24 Elmo, `damage = 120` HP/s steht in der `mapinfo.lua`),
+**aber die Oberflaeche steht stumpf graubraun statt gluehend.** `baseColor
+{1.0, 0.78, 0.22}` und `ambientFactor 1.5` reichen unter BumpWater nicht, um
+Emission vorzutaeuschen — BumpWater beleuchtet, es leuchtet nicht. Wer
+gluehende Lava will, braucht den Weg, den der Builder-Bericht schon benennt:
+ein Spielseiten-Gadget mit eigener Ebene (BAR macht es so). **Das ist ein
+neuer Vorgang, kein Fehler dieses Zuges** — der Zug hat geliefert, was
+`mapinfo.water` hergibt.
+
+### Sumpfwasser — Tuempel da, aber das Gelaende drumherum ist weiss gescheckt
+
+![Sumpf nah](windows/sumpf-nah.png)
+![Sumpf, ganze Karte](windows/sumpf-ganze-karte.png)
+
+Der Tuempel liest sich als truebes gruenes Wasser. Auffaellig ist etwas
+anderes: **ueber die ganze Karte liegt ein weiss-graues Splat-Muster auf jeder
+Neigung.** Das ist die Gelaendetextur (SSMF/Splat), nicht das Wasser —
+Terrain-Look, **Studio#16**. Es faellt hier nur auf, weil Landsockel und Mulde
+neue Haenge erzeugen.
+
+### Eisflaeche — bewusst nicht abgezogen
+
+0 nasse Punkte, also zeichnet kein Renderer Wasser. Die **Bemalung** fehlt
+(Eis aufmalen = SSMF-Diffuse einfaerben = Terrain-Look, Studio#16). Ein Bild
+haette nur eine leere weisse Platte gezeigt.
