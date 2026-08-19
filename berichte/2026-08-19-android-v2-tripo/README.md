@@ -68,3 +68,59 @@ Sample-Projekt; deshalb **kein `BAR-`-Praefix**. Der Nachweis haengt als
 
 Bauweg und alle Zahlen:
 `conatus-studio/docs/assets/bauplaene/android-leicht-v2-tripo.md`.
+
+---
+
+# Nachtrag Studio#432: die Loecher, die man erst im Spiel sah
+
+Der Mensch hat V2 im Spiel gesehen (cnc#114) und **zwei** Dinge gemeldet:
+eine **Luecke am Hals** waehrend der Animation — und dass man **vom Kopf aus
+durch die Unterseite auf den Boden schaut**.
+
+Beides ist in den Bildern oben nicht zu sehen, und das hat einen Grund:
+
+* die **Strichfiguren** von #429 haben weder Haut noch Rueckseiten;
+* die **texturierten Ansichten** von #428 sind ohne Backface-Culling
+  gerendert. Blender zeichnet Rueckseiten mit, die Engine nicht. Ein offenes
+  Netz sieht in Blender geschlossen aus.
+
+Die Bilder in diesem Nachtrag sind deshalb **mit Culling** gerendert, aus den
+**echten S3O-Pieces** in den Posen, die das erzeugte Lua-Skript aufbaut
+(`tools/blender/anim_lua_vorschau.py --art pieces`).
+
+| Bild | was |
+|---|---|
+| `anim-pieces-kopf-unten-vorher.png` | **das Kopf-Piece allein, von unten** — man sieht glatt hindurch. Das ist der Befund des Menschen, isoliert. |
+| `anim-pieces-kopf-unten-nachher.png` | dasselbe nach dem Deckeln: geschlossen |
+| `anim-pieces-death-hals-vorher.png` | Tot-Clip bei t = 1.54 s: Kopf loest sich sichtbar vom Kragen, dazwischen schwarzes Nichts |
+| `anim-pieces-death-hals-nachher.png` | dasselbe mit Deckel und neuem Kopf-Pivot |
+| `anim-pieces-bow-hals-vorher.png` | Verbeugen bei t = 3.04 s, von hinten |
+| `anim-pieces-bow-hals-nachher.png` | dasselbe danach |
+
+## Was gemessen wurde (nicht geschaetzt)
+
+**Die Tripo-Teile sind keine geschlossenen Koerper.** 332 offene Kanten im
+ganzen Modell, davon 46 am Kopf: eine Randschleife am Halsschnitt (6.6 Elmo
+Umfang) und eine oben im Helm (13.9 Elmo). Der Kragen (`tripo_part_8`) traegt
+die Gegenseite desselben Schnitts. Nach dem Deckeln: **332 → 4** Randkanten,
+und die vier bilden keinen Kreis, umschliessen also keine Flaeche. Preis:
+**+235 Dreiecke** (5103 → 5338, +4.6 %).
+
+**Die Halsluecke ist etwas anderes** und laesst sich nicht schliessen, nur
+verkleinern. Kopf und Kragen teilen sich 136 deckungsgleiche Punkte; drehen
+sich die beiden starren Pieces gegeneinander, reissen die auseinander. Der
+Abstand haengt allein am **Pivot** (nicht am Leitjoint — die drei Halsjoints
+drehen sich in diesem Rig identisch). Groesster Spalt in Elmo:
+
+| Kopf-Pivot | walk | death | bow |
+|---|---:|---:|---:|
+| Gelenkkopf `NeckTwist01` (Stand #428) | 0.94 | 1.80 | 0.95 |
+| **Mitte des Halsschnitts (jetzt)** | **0.58** | **1.41** | **0.57** |
+| das gelieferte Modell selbst, echte Skin-Verformung | 0.72 | **1.29** | 0.72 |
+
+Die letzte Zeile ist die Untergrenze: **das Original reisst an derselben Naht
+selbst um 1.29 Elmo auf.** Ein Spalt „unter 0.3 Elmo" ist an diesem Modell
+nicht zu haben — dafuer muesste die Geometrie am Hals anders geschnitten sein.
+
+> ⚠ **Kein Sichttest.** Blender/EEVEE unter WSL. Ob es im Spiel jetzt gut
+> aussieht, sieht nur der Mensch unter Windows.
