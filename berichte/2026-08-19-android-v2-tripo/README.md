@@ -138,6 +138,7 @@ Windows-Engine, echter Renderer, Spielbaum `ConatusV0` auf `6c393d4` — also
 |---|---|
 | `windows-v1-gegen-v2.png` | **A/B/C**: V1 · V2 stehend · V2 mitten im Verbeugen — gleiche Karte, gleiche Kamera (60 Elmo, 62°), gleicher Ausschnitt |
 | `windows-v2-idle-phasen.png` | die Ruhelage ueber 270 Frames: steht, steht, kippt, liegt |
+| `windows-v2-kopf-von-oben.png` | Kamera **8°** und **25°** von der Senkrechten — der Kopf von oben |
 
 **Was die Phasenreihe zeigt.** Der Idle-Wechsel aus #429 laeuft im Spiel: die
 Einheit steht bei Frame 60 und 150 aufrecht, kippt bei 240 nach vorn und liegt
@@ -156,10 +157,13 @@ gemessen:
    verbeugten Haltung (C) ist von oben fast nur noch Blau zu sehen.
 3. **Der Umriss ist schmaler und laenger**, mit sichtbar duenneren Armen.
 
-**Was diese Bilder NICHT beantworten:** den Durchblick von oben in den Kopf,
-den der Mensch in cnc#114 gemeldet hat. Beide Kameras stehen 62° von der
-Senkrechten, also fast waagerecht — sie sehen den Kopf von vorn, nie von oben.
-Dafuer steht ein eigener Abzug daneben.
+**Der Durchblick von oben in den Kopf** — der zweite Befund des Menschen aus
+cnc#114 — braucht eine eigene Kamera: die beiden Bilder oben stehen 62° von der
+Senkrechten, also fast waagerecht, und sehen den Kopf nie von oben. Dafuer ist
+`windows-v2-kopf-von-oben.png` da: 8° und 25° von der Senkrechten, fast
+Draufsicht. **Der Helm ist geschlossen, kein Boden durch den Kopf.** Das ist der
+Sichtbeleg dafuer, dass das Deckeln aus #432 auch in der Engine ankommt — in
+Blender war es nicht zu sehen, weil dort ohne Backface-Culling gerendert wurde.
 
 > Diese zwei Bilder sind ein **Sichtbeleg**, kein Waechter. Ob es *gefaellt*,
 > entscheidet nur der Mensch; die Punkte 1 und 2 sind das, was ich ihm dafuer

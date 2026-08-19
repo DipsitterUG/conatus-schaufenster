@@ -121,6 +121,7 @@ der Karte gesucht, Streuung ≤ 13 Elmo auf 80 Elmo Umkreis).
 
 | Bild | was |
 |---|---|
+| `windows-nah-00-warum-es-vorher-nicht-ging.png` | derselbe Androide bei **35** und bei **60** Elmo, gleicher Bildausschnitt — links der alte Fehlschlag, rechts die Behebung |
 | `windows-nah-01-60elmo.png` | **der Nahblick**: ganze Einheit, 60 Elmo Kameraabstand, echter Windows-Renderer |
 | `windows-nah-02-abstandsreihe.png` | dieselbe Einheit bei 60 / 80 / 120 / 260 Elmo — von der Nahaufnahme bis zur Spielentfernung |
 
