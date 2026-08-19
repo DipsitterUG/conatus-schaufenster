@@ -89,3 +89,51 @@ Alles hier ist eigene Arbeit. Geometrie: `conatus-studio/tools/blender/android_l
 (Blender 5.1.2, S3O-Kit). Textur: `backen.py`, Cycles-Bake aus den Zonenfarben
 des Bauplans. Zielbild: unsere Bildwerkstatt. Bauplan:
 `conatus-studio/docs/assets/bauplaene/android-leicht.md`.
+
+---
+
+# Nachtrag 2026-08-20: der Nahblick ist da (Abnahme-Helfer)
+
+Der Absatz oben — „wie es *im Spiel* aussieht, hat noch niemand gesehen" — ist
+**ueberholt**. Er stimmte, aber nicht aus dem dort genannten Grund.
+
+**Woran es wirklich lag.** `terrain_sichttest.ps1` setzt die Einheit auf den
+Zielpunkt der Kamera und richtet die Kamera auf **den Boden** an diesem Punkt.
+Die Einheit steht damit im Bild, aber mit den **Fuessen in der Bildmitte** — sie
+waechst nach oben aus dem Bild heraus. Bei Sichtfeld 45° ist die halbe Bildhoehe
+`0.414 x Abstand`; fuer 20 Elmo Koerperhoehe braucht es also **mindestens rund
+50 Elmo Kameraabstand**, sonst ist der Kopf ab. Die frueheren Serien lagen
+darunter oder weit darueber. Der Blick lief nie „auf Wasser und Horizont" — er
+lief auf den Bauch.
+
+Kein Werkzeug geaendert, nur die Kamerazeile:
+
+```
+powershell -File tools\terrain_sichttest.ps1 -Map "Conatus Feature Showcase 0.1" `
+  -Einheit android_leicht -Attribution 0 `
+  -Kameras "250,520,60,62|250,900,80,58|900,700,120,52|900,1200,260,45"
+```
+
+Vier Standorte statt einem, weil das Gadget **je Kamera eine eigene Einheit**
+spawnt — vier Kameras auf denselben Punkt haetten vier Androiden ineinander
+gestellt. Die Standorte sind flacher Boden ueber Wasserlinie (aus der Heightmap
+der Karte gesucht, Streuung ≤ 13 Elmo auf 80 Elmo Umkreis).
+
+| Bild | was |
+|---|---|
+| `windows-nah-01-60elmo.png` | **der Nahblick**: ganze Einheit, 60 Elmo Kameraabstand, echter Windows-Renderer |
+| `windows-nah-02-abstandsreihe.png` | dieselbe Einheit bei 60 / 80 / 120 / 260 Elmo — von der Nahaufnahme bis zur Spielentfernung |
+
+Ausschnitte gerechnet, nicht gesucht: Bildmitte ist der Fussboden, die Hoehe
+folgt aus `20 / (2 · d · tan 22.5°)`.
+
+**Was jetzt zu sehen ist** — und in den Blender-Ansichten so nicht zu sehen war:
+der Koerper bleibt auch unter Engine-Licht dunkel, Brustharnisch und
+Schienbeinschienen tragen ihn als helle Flecken, der Leuchtschlitz im Kopf
+haelt bis 120 Elmo. Ab 260 Elmo bleibt eine dunkle Silhouette mit zwei hellen
+Beinflecken — genau die Wertetrennung, die Stufe 0 als das einzige beschrieben
+hat, was auf Spielentfernung noch traegt.
+
+Gemessen ist hier nichts — das ist ein **Sichtbeleg**, kein Waechter. Was das
+Modell im Spiel *kann*, steht weiter oben und kommt aus
+`tools/conatus_android_smoke.sh`.

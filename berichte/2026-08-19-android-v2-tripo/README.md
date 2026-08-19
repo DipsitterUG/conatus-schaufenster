@@ -124,3 +124,43 @@ nicht zu haben — dafuer muesste die Geometrie am Hals anders geschnitten sein.
 
 > ⚠ **Kein Sichttest.** Blender/EEVEE unter WSL. Ob es im Spiel jetzt gut
 > aussieht, sieht nur der Mensch unter Windows.
+
+---
+
+# Nachtrag 2026-08-20: **jetzt mit Sichttest** (Abnahme-Helfer)
+
+Ueber diesem Nachtrag steht zweimal „⚠ Kein Sichttest — Blender/EEVEE unter
+WSL". Das gilt fuer die Bilder darueber weiter. Die beiden hier sind **anders**:
+Windows-Engine, echter Renderer, Spielbaum `ConatusV0` auf `6c393d4` — also
+**mit** den gedeckelten Netzen und dem neuen Kopf-Pivot aus Studio#432.
+
+| Bild | was |
+|---|---|
+| `windows-v1-gegen-v2.png` | **A/B/C**: V1 · V2 stehend · V2 mitten im Verbeugen — gleiche Karte, gleiche Kamera (60 Elmo, 62°), gleicher Ausschnitt |
+| `windows-v2-idle-phasen.png` | die Ruhelage ueber 270 Frames: steht, steht, kippt, liegt |
+
+**Was die Phasenreihe zeigt.** Der Idle-Wechsel aus #429 laeuft im Spiel: die
+Einheit steht bei Frame 60 und 150 aufrecht, kippt bei 240 nach vorn und liegt
+bei 330 flach auf dem Boden. Das Umfallen ist also **kein Einfrieren und kein
+Absturz** — es ist der Clip.
+
+**Was der A/B/C-Bogen zeigt** — drei Unterschiede zu V1, alle sichtbar, keiner
+gemessen:
+
+1. **V2 traegt keine Waffe.** Bei V1 liegt das Gewehr in beiden Haenden, bei V2
+   sind die Haende leer. Das ist bekannt (nur `Gun_Muzzle`, kein
+   `Machine_Gun`-Piece) — im echten Renderer faellt es deutlicher auf als in
+   der Blender-Ansicht.
+2. **Die Teamfarbe traegt viel mehr Flaeche.** Bei V1 ist Blau auf die
+   Schultern begrenzt, bei V2 nimmt es den ganzen Brustpanzer ein. In der
+   verbeugten Haltung (C) ist von oben fast nur noch Blau zu sehen.
+3. **Der Umriss ist schmaler und laenger**, mit sichtbar duenneren Armen.
+
+**Was diese Bilder NICHT beantworten:** den Durchblick von oben in den Kopf,
+den der Mensch in cnc#114 gemeldet hat. Beide Kameras stehen 62° von der
+Senkrechten, also fast waagerecht — sie sehen den Kopf von vorn, nie von oben.
+Dafuer steht ein eigener Abzug daneben.
+
+> Diese zwei Bilder sind ein **Sichtbeleg**, kein Waechter. Ob es *gefaellt*,
+> entscheidet nur der Mensch; die Punkte 1 und 2 sind das, was ich ihm dafuer
+> hinlege.
