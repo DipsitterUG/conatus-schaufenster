@@ -15,6 +15,17 @@ Map-Units, die kleinste Karte im Bestand. Herd in Elmo 1536,1536
 (Kartenquadrat 1,1). Werkzeug: `tools/conatus_myzel_bild.sh` im Spiel-Repo,
 mit `CONATUS_MYZEL_BILD_RUECKBAU=1`.
 
+> **Stand der Bilder: 2026-08-18, VOR der Kacheltextur.** Zwei Tage spaeter ist
+> Studio#416 dazugekommen -- die Kacheln tragen seither die Struktur eines
+> Bildes (ambientCG **Metal022**, CC0, vom Menschen vorgegeben in cnc#95)
+> statt reiner Rechenfarbe. **Alle drei Stufen** tragen dasselbe Bild; die
+> Stufe sitzt in Toenung, Deckung und Ueberstand. Was diese acht Bilder zeigen,
+> ist also die **Form** des Vorgangs (Rand/Kern/Kruste/Boden, Knoten,
+> Sanierer) und **nicht mehr die Oberflaeche**. Der Kern traegt heute genau
+> Toenung und Deckung, die der Mensch in #416 gesehen hat. Frische Abzuege
+> gehoeren in die Erst-Abnahme; bis dahin ist dieser Satz die ehrlichere
+> Auskunft als ein stiller Austausch.
+
 ## Die acht Bilder
 
 **Zwei Laeufe, dieselbe Kamera viermal** (1536,1536, Hoehe 850, 18 Grad
@@ -59,7 +70,8 @@ Kruste, einmal abgetragen. Der Sprung dazwischen ist der ganze Vorgang.
 1. **Der Rand war zu duenn.** Mit einer Deckung von 0,28..0,50 zerfiel er ueber
    dunklem Boden in ein sichtbares Kachelraster, statt auszulaufen -- der
    Ueberstand benachbarter Kacheln deckte einander nicht mehr. Jetzt 0,45..0,67,
-   der Kern 0,62..0,92. Duenner als der Kern bleibt er deutlich.
+   der Kern 0,60..0,90 (seit dem Zusammenfuehren mit #416 genau der Wert, den
+   der einstufige Teppich dort hatte). Duenner als der Kern bleibt er deutlich.
 2. **Der Riss lag immer waagerecht.** Das las sich als Zeilenmuster, nicht als
    aufgeplatzter Beton. Jetzt entscheidet der Streuwert der Kachel auch die
    Richtung.
