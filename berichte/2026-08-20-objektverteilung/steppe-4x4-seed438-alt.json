@@ -1,0 +1,33 @@
+{
+  "biome": "steppe",
+  "clark_evans": {
+    "alle": {
+      "anzahl": 182,
+      "belastbar": true,
+      "beobachtet": 144.08,
+      "erwartet": 131.58,
+      "flaeche": 12603392.0,
+      "grund": "",
+      "index": 1.095,
+      "urteil": "regelmaessig",
+      "z": 2.45
+    },
+    "baeume": {
+      "anzahl": 31,
+      "belastbar": true,
+      "beobachtet": 272.59,
+      "erwartet": 318.81,
+      "flaeche": 12603392.0,
+      "grund": "",
+      "index": 0.855,
+      "urteil": "zufaellig",
+      "z": -1.54
+    }
+  },
+  "hinweis": "Korridorbahnen nur zur Orientierung eingezeichnet -- der Alt-Stand kennt sie nicht.",
+  "map_units": 4,
+  "objekte": 182,
+  "seed": 438,
+  "stand": "origin/main (vor #438)",
+  "zulaessige_flaeche": 12603392.0
+}

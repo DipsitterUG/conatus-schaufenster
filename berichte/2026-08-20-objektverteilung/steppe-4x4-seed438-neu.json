@@ -1,0 +1,66 @@
+{
+  "bild": "output/berichte-438/steppe-4x4-seed438-neu.png",
+  "biome": "steppe",
+  "clark_evans": {
+    "alle": {
+      "anzahl": 289,
+      "belastbar": true,
+      "beobachtet": 58.56,
+      "erwartet": 104.42,
+      "flaeche": 12603392.0,
+      "grund": "",
+      "index": 0.5608,
+      "urteil": "geklumpt",
+      "z": -14.28
+    },
+    "baeume": {
+      "anzahl": 157,
+      "belastbar": true,
+      "beobachtet": 87.58,
+      "erwartet": 141.67,
+      "flaeche": 12603392.0,
+      "grund": "",
+      "index": 0.6182,
+      "urteil": "geklumpt",
+      "z": -9.15
+    }
+  },
+  "cluster": {
+    "bestaende": {
+      "bestand": 3,
+      "dickicht": 1,
+      "felsfeld": 6,
+      "grasnest": 11,
+      "gruppe": 8,
+      "lagerplatz": 3,
+      "solitaer": 25,
+      "wald": 1
+    },
+    "stueck_je_stufe": {
+      "bestand": 67,
+      "dickicht": 52,
+      "felsfeld": 44,
+      "grasnest": 93,
+      "gruppe": 43,
+      "lagerplatz": 19,
+      "solitaer": 25,
+      "wald": 7
+    },
+    "verworfene_orte": 0
+  },
+  "korridor": {
+    "breite_anteil": 0.07,
+    "gesperrte_kategorien": [
+      "resource",
+      "rock",
+      "structure",
+      "tree"
+    ],
+    "nachtraeglich_entfernt": 5
+  },
+  "korridor_breite": 0.07,
+  "map_units": 4,
+  "objekte": 289,
+  "seed": 438,
+  "zulaessige_flaeche": 12603392.0
+}

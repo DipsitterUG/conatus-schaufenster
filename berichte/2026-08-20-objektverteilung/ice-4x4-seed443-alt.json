@@ -1,0 +1,66 @@
+{
+  "bild": "output/berichte-443/ice-4x4-seed443-alt.png",
+  "biome": "ice",
+  "clark_evans": {
+    "alle": {
+      "anzahl": 319,
+      "belastbar": true,
+      "beobachtet": 54.81,
+      "erwartet": 109.19,
+      "flaeche": 15212544.0,
+      "grund": "",
+      "index": 0.5019,
+      "urteil": "geklumpt",
+      "z": -17.02
+    },
+    "baeume": {
+      "anzahl": 237,
+      "belastbar": true,
+      "beobachtet": 55.13,
+      "erwartet": 126.68,
+      "flaeche": 15212544.0,
+      "grund": "",
+      "index": 0.4352,
+      "urteil": "geklumpt",
+      "z": -16.63
+    }
+  },
+  "cluster": {
+    "bestaende": {
+      "bestand": 4,
+      "dickicht": 2,
+      "felsfeld": 10,
+      "grasnest": 1,
+      "gruppe": 9,
+      "lagerplatz": 3,
+      "solitaer": 20,
+      "wald": 2
+    },
+    "stueck_je_stufe": {
+      "bestand": 81,
+      "dickicht": 84,
+      "felsfeld": 66,
+      "grasnest": 8,
+      "gruppe": 38,
+      "lagerplatz": 18,
+      "solitaer": 20,
+      "wald": 66
+    },
+    "verworfene_orte": 0
+  },
+  "korridor": {
+    "breite_anteil": 0.07,
+    "gesperrte_kategorien": [
+      "resource",
+      "rock",
+      "structure",
+      "tree"
+    ],
+    "nachtraeglich_entfernt": 2
+  },
+  "korridor_breite": 0.07,
+  "map_units": 4,
+  "objekte": 319,
+  "seed": 443,
+  "zulaessige_flaeche": 15212544.0
+}

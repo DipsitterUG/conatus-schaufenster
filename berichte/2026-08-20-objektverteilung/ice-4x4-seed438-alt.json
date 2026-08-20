@@ -1,0 +1,33 @@
+{
+  "biome": "ice",
+  "clark_evans": {
+    "alle": {
+      "anzahl": 124,
+      "belastbar": true,
+      "beobachtet": 163.03,
+      "erwartet": 175.27,
+      "flaeche": 15237120.0,
+      "grund": "",
+      "index": 0.9302,
+      "urteil": "zufaellig",
+      "z": -1.49
+    },
+    "baeume": {
+      "anzahl": 38,
+      "belastbar": true,
+      "beobachtet": 230.73,
+      "erwartet": 316.61,
+      "flaeche": 15237120.0,
+      "grund": "",
+      "index": 0.7287,
+      "urteil": "geklumpt",
+      "z": -3.2
+    }
+  },
+  "hinweis": "Korridorbahnen nur zur Orientierung eingezeichnet -- der Alt-Stand kennt sie nicht.",
+  "map_units": 4,
+  "objekte": 124,
+  "seed": 438,
+  "stand": "origin/main (vor #438)",
+  "zulaessige_flaeche": 15237120.0
+}

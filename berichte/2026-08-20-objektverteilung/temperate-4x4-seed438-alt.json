@@ -1,0 +1,33 @@
+{
+  "biome": "temperate",
+  "clark_evans": {
+    "alle": {
+      "anzahl": 264,
+      "belastbar": true,
+      "beobachtet": 109.44,
+      "erwartet": 110.38,
+      "flaeche": 12865536.0,
+      "grund": "",
+      "index": 0.9915,
+      "urteil": "zufaellig",
+      "z": -0.26
+    },
+    "baeume": {
+      "anzahl": 146,
+      "belastbar": true,
+      "beobachtet": 113.57,
+      "erwartet": 148.43,
+      "flaeche": 12865536.0,
+      "grund": "",
+      "index": 0.7652,
+      "urteil": "geklumpt",
+      "z": -5.43
+    }
+  },
+  "hinweis": "Korridorbahnen nur zur Orientierung eingezeichnet -- der Alt-Stand kennt sie nicht.",
+  "map_units": 4,
+  "objekte": 264,
+  "seed": 438,
+  "stand": "origin/main (vor #438)",
+  "zulaessige_flaeche": 12865536.0
+}

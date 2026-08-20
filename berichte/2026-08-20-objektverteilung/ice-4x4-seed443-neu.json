@@ -1,0 +1,92 @@
+{
+  "baum_namen": {
+    "leitbaum_etagen_schnee_01": 5,
+    "leitbaum_etagen_schnee_02": 28,
+    "leitbaum_etagen_schnee_03": 2,
+    "leitbaum_etagen_schnee_04": 9,
+    "leitbaum_etagen_schnee_05": 4,
+    "leitbaum_etagen_schnee_06": 3,
+    "leitbaum_etagen_schnee_07": 2,
+    "leitbaum_etagen_schnee_08": 4,
+    "nadelbaum_fichte_01": 15,
+    "nadelbaum_fichte_02": 4,
+    "nadelbaum_fichte_03": 5,
+    "nadelbaum_fichte_04": 3,
+    "nadelbaum_fichte_05": 21,
+    "nadelbaum_fichte_06": 29,
+    "nadelbaum_fichte_07": 3,
+    "nadelbaum_fichte_08": 6,
+    "nadelbaum_kiefer_01": 5,
+    "nadelbaum_kiefer_02": 4,
+    "nadelbaum_kiefer_03": 19,
+    "nadelbaum_kiefer_04": 3,
+    "nadelbaum_kiefer_05": 6,
+    "nadelbaum_kiefer_06": 7,
+    "nadelbaum_kiefer_07": 13,
+    "nadelbaum_kiefer_08": 39
+  },
+  "bild": "output/berichte-443/ice-4x4-seed443-neu.png",
+  "biome": "ice",
+  "clark_evans": {
+    "alle": {
+      "anzahl": 317,
+      "belastbar": true,
+      "beobachtet": 61.55,
+      "erwartet": 109.53,
+      "flaeche": 15212544.0,
+      "grund": "",
+      "index": 0.562,
+      "urteil": "geklumpt",
+      "z": -14.92
+    },
+    "baeume": {
+      "anzahl": 239,
+      "belastbar": true,
+      "beobachtet": 61.33,
+      "erwartet": 126.15,
+      "flaeche": 15212544.0,
+      "grund": "",
+      "index": 0.4862,
+      "urteil": "geklumpt",
+      "z": -15.2
+    }
+  },
+  "cluster": {
+    "bestaende": {
+      "bestand": 4,
+      "dickicht": 2,
+      "felsfeld": 10,
+      "grasnest": 1,
+      "gruppe": 9,
+      "lagerplatz": 3,
+      "solitaer": 20,
+      "wald": 2
+    },
+    "stueck_je_stufe": {
+      "bestand": 87,
+      "dickicht": 76,
+      "felsfeld": 63,
+      "grasnest": 7,
+      "gruppe": 47,
+      "lagerplatz": 18,
+      "solitaer": 20,
+      "wald": 76
+    },
+    "verworfene_orte": 0
+  },
+  "korridor": {
+    "breite_anteil": 0.07,
+    "gesperrte_kategorien": [
+      "resource",
+      "rock",
+      "structure",
+      "tree"
+    ],
+    "nachtraeglich_entfernt": 7
+  },
+  "korridor_breite": 0.07,
+  "map_units": 4,
+  "objekte": 317,
+  "seed": 443,
+  "zulaessige_flaeche": 15212544.0
+}
