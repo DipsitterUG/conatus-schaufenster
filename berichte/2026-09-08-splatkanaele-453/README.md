@@ -15,7 +15,7 @@ ist der Inhalt der Splat-Detailtexturen.
 | steppe | Staubfilm (Kanal 0, 19,3 %) und Felskanal (13,2 %) bekommen Korn |
 | desert | die **Grundschicht** (Kanal 2, 65,5 %) war Sinus -- jetzt Duenensand |
 | ice | Eisschicht unveraendert; die Schneeflaeche (54 % + 34 %) bleibt Sinus, Schneekachel fehlt noch |
-| volcanic | die **Aschefliaeche** (Kanal 2, 67,8 %) und der Basalthang (32,2 %) bekommen Struktur |
+| volcanic | die **Ascheflaeche** (Kanal 2, 67,8 %) und der Basalthang (32,2 %) bekommen Struktur |
 
 Am deutlichsten in den Nahsichten von `desert` und `volcanic`: vorher eine
 weich verschmierte Flaeche, nachher ein Korn mit Realmassstab (Kachelperiode
