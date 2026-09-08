@@ -1,31 +1,25 @@
-# Splat-Kanaele ohne Fotokachel geschlossen (Studio#453)
+# Splat-Kanaele: Fotokacheln statt Sinus-Wellen (Studio#453)
 
-Windows-Engine-Abzuege, je Biom eine Probekarte von 4x4 Map-Units, gleiche
-Saat, gleiche Kamera, gleicher Wasser-Renderer (Water=4) -- **einziger**
-Unterschied zwischen `vorher` und `nachher` ist die Belegung der vier
-Splat-Kanaele mit CC0-Fotokacheln (ambientCG) statt mit Sinus-Wellen.
-Aufgenommen mit `tools/terrain_sichttest.ps1`, 2026-09-08.
+2026-09-08, Windows-Sichttest (Zielsystem; WSL rendert ueber eine andere
+GL-Kette). Je Biom eine Probekarte durch die echte Pipeline, zwei Kameras:
+Draufsicht (Hoehe 1900) und Nahsicht (Hoehe 220, 65 Grad) mit einer Einheit
+als Massstab.
 
-| Datei | Kamera |
+**vorher** = Stand vor #453, **nachher** = mit den Kacheln. Beide Laeufe aus
+demselben Seed, derselben Kamera, derselben Engine -- der einzige Unterschied
+ist der Inhalt der Splat-Detailtexturen.
+
+| Biom | was sich aendert |
 |---|---|
-| `*-drauf-*.jpg` | Draufsicht, Kamerahoehe 1900 Elmo ueber Kartenmitte |
-| `*-nah-*.jpg` | Nahsicht, 220 Elmo Hoehe, 65 Grad von der Senkrechten; die Figur in der Mitte ist eine Einheit als Massstab |
+| temperate | unveraendert (hatte seit R9 alle Kacheln) -- die Kontrollprobe |
+| steppe | Staubfilm (Kanal 0, 19,3 %) und Felskanal (13,2 %) bekommen Korn |
+| desert | die **Grundschicht** (Kanal 2, 65,5 %) war Sinus -- jetzt Duenensand |
+| ice | Eisschicht unveraendert; die Schneeflaeche (54 % + 34 %) bleibt Sinus, Schneekachel fehlt noch |
+| volcanic | die **Aschefliaeche** (Kanal 2, 67,8 %) und der Basalthang (32,2 %) bekommen Struktur |
 
-## Was zu sehen ist
+Am deutlichsten in den Nahsichten von `desert` und `volcanic`: vorher eine
+weich verschmierte Flaeche, nachher ein Korn mit Realmassstab (Kachelperiode
+71--143 Elmo, kleiner als eine Einheit).
 
-- **volcanic** und **desert**: der groesste Sprung. Vorher eine weiche,
-  glaenzende Flaeche mit grossen Schlieren ("geschmolzenes Plastik"), nachher
-  ein koerniges Schlacke- bzw. Sandfeld. Gemessener Feinkontrast der Nahsicht:
-  volcanic +121 %, desert +12 %.
-- **steppe**: kleiner Sprung (+1 %). Die Grundschicht hatte schon eine Kachel;
-  neu sind Staubfilm und Fels, und der Fels liegt an Haengen, die diese Kamera
-  kaum zeigt.
-- **temperate**: **Kontrollbild.** Hier wurde nichts geaendert, und die Bilder
-  sind praktisch deckungsgleich (mittlere Pixelabweichung 0,0 bzw. 0,2 von
-  255). Ohne dieses Paar waere nicht belegt, dass die Unterschiede oben von
-  der Aenderung kommen und nicht vom Aufnahmeverfahren.
-- **ice**: ebenfalls unveraendert -- und das ist hier **kein** Erfolg, sondern
-  der offene Rest. Die beiden Kanaele, die 88 % der Eisflaeche tragen, sind
-  Schnee, und eine Schneekachel gibt es noch nicht. Die schlierige Oberflaeche
-  auf `ice-nah-nachher.jpg` ist genau der Zustand, den desert und volcanic
-  gerade verlassen haben.
+Quelle der Kacheln: ambientCG (CC0), bereits mit Herkunftsnachweis im
+Content-Store des Studios -- fuer #453 kam **keine** neue Fremddatei dazu.
